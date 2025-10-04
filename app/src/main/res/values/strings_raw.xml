@@ -29,7 +29,7 @@
     <string name="hk_bcache_host">cn-hk-eq-bcache-01.bilivideo.com</string>
     <string name="tf_hw_host">upos-tf-all-hw.bilivideo.com</string>
     <string name="tf_tx_host">upos-tf-all-tx.bilivideo.com</string>
-    <string name="tf_tx_host">cn-jxnc-cmcc-bcache-06.bilivideo.com</string>
+    <string name="cmcc_jxnc_host">cn-jxnc-cmcc-bcache-06.bilivideo.com</string>
     <string name="speed_formatter">%sKB/s</string>
     <string name="upos">UPOS</string>
     <string name="keyword_group_name_uid">UID</string>
