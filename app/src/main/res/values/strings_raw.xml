@@ -30,6 +30,10 @@
     <string name="tf_hw_host">upos-tf-all-hw.bilivideo.com</string>
     <string name="tf_tx_host">upos-tf-all-tx.bilivideo.com</string>
     <string name="cmcc_jxnc_host">cn-jxnc-cmcc-bcache-06.bilivideo.com</string>
+    <string name="bs_host">upos-sz-mirrorbs.bilivideo.com</string>
+    <string name="gddg_ct_host">cn-gddg-ct-01-01.bilivideo.com</string>
+    <string name="lnsy_cu_host">cn-lnsy-cu-01-01.bilivideo.com</string>
+    <string name="gddg_cm_host">cn-gddg-cm-01-01.bilivideo.com</string>
     <string name="speed_formatter">%sKB/s</string>
     <string name="upos">UPOS</string>
     <string name="keyword_group_name_uid">UID</string>

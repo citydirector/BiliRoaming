@@ -23,6 +23,10 @@
         <item>hwov（华为海外）</item>
         <item>hk_bcache（Bilibili海外）</item>
         <item>cmcc_jxnc (移动) </item>
+        <item>bs（白山云）</item>
+        <item>gddg_ct（广东东莞电信）</item>
+        <item>lnsy_cu（辽宁沈阳联通）</item>
+        <item>gddg_cm（广东东莞移动）</item>
     </string-array>
     <string-array name="upos_values">
         <item>$1</item>
@@ -47,6 +51,10 @@
         <item>@string/hwov_host</item>
         <item>@string/hk_bcache_host</item>
         <item>@string/cmcc_jxnc_host</item>
+        <item>@string/bs_host</item>
+        <item>@string/gddg_ct_host</item>
+        <item>@string/lnsy_cu_host</item>
+        <item>@string/gddg_cm_host</item>
     </string-array>
     <string-array name="tab_entries">
         <item>直播</item>
