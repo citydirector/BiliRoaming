@@ -1,0 +1,43 @@
+name: Sync Upstream
+
+permissions:
+  contents: write # 授予写权限以便推送代码
+
+on:
+  schedule:
+    # 计划任务：每天北京时间上午 8 点运行 (UTC 时间 0 点)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许手动点击按钮触发
+
+jobs:
+  sync_upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # 获取完整的 git 历史，这对合并是必须的
+          token: ${{ secrets.GITHUB_TOKEN }} # 使用 GitHub 自动生成的 Token
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Add and Fetch Upstream
+        run: |
+          # 添加上游仓库地址，如果上游不是这个地址，请修改
+          git remote add upstream https://github.com/yujincheng08/BiliRoaming.git
+          git fetch upstream
+
+      - name: Merge Upstream Changes
+        run: |
+          # 切换到你的主分支 (master)
+          git checkout master
+          # 合并上游的 master 分支
+          git merge upstream/master --allow-unrelated-histories
+
+      - name: Push changes
+        run: |
+          # 将合并后的更改推送到你的仓库
+          git push origin master
